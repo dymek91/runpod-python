@@ -81,7 +81,7 @@ class JobScaler():
                 if job:
                     yield job
 
-            await asyncio.sleep(1)
+            await asyncio.sleep(0.1)
 
 
             log.debug(f"Concurrency set to: {self.current_concurrency}")
